@@ -6,103 +6,119 @@
   <title>Gaming Keyboard - Buy Now</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
       font-family: 'Orbitron', sans-serif;
       background-color: #0d1117;
       color: white;
+      overflow: hidden;
     }
 
-    header {
-      background: url('https://images.unsplash.com/photo-1612817158786-66138fba5c68?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-      height: 50vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #00f2ff;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      text-shadow: 0 0 10px #00f2ff;
-    }
-
-    .product-section {
-      padding: 2rem;
+    .container {
+      height: 110vh;
       display: flex;
       flex-direction: column;
+      justify-content: space-evenly;
       align-items: center;
       text-align: center;
+      padding: 1rem;
     }
 
-    .product-section img {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 12px;
+    .container img {
+      width: 99%;
+      max-width: 390px; /* ⬅️ Slightly larger */
+      border-radius: 15px;
       box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
     }
 
-    .product-section h2 {
+    h1 {
       color: #00f2ff;
-      margin-top: 1.5rem;
+      font-size: 2.8rem;
+      text-shadow: 0 0 6px #00f2ff;
     }
 
-    .product-section p {
-      color: #aaa;
-      font-size: 1.1rem;
-      margin: 0.5rem 0;
+    p {
+      font-size: 2rem;
+      color: #ccc;
     }
 
     .price {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: #00f2ff;
-      margin: 1rem 0;
+      font-weight: bold;
+      margin: 0.5rem 0;
     }
 
     .buy-btn {
       background-color: #00f2ff;
       color: #000;
       border: none;
-      padding: 0.8rem 1.5rem;
+      padding: 0.6rem 1.2rem;
       border-radius: 10px;
       font-weight: bold;
       font-size: 1rem;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
     }
 
     .buy-btn:hover {
       background-color: #00cfe0;
     }
 
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background-color: #0b0f14;
-      color: #777;
+    .mpesa-box {
+      background-color: #111722;
+      padding: 0.6rem 1.2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
+      max-width: 300px;
+    }
+
+    .mpesa-box h3 {
+      color: #00f2ff;
+      font-size: 1rem;
+    }
+
+    .mpesa-box p {
       font-size: 0.9rem;
-      margin-top: 3rem;
+      color: #ccc;
+      margin: 0.2rem 0;
+    }
+
+    footer {
+      font-size: 0.7rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <div class="container">
     <h1>Gaming Keyboard</h1>
-  </header>
-
-  <section class="product-section">
     <img src="product4.png" alt="Gaming Keyboard" />
-    <h2>RGB MechMaster</h2>
-    <p>Mechanical keys, full RGB lighting, anti-ghosting support — your ultimate gaming upgrade.</p>
+    <p>RGB MechMaster — Mechanical keys, anti-ghosting, full RGB vibes 🔥</p>
     <div class="price">Price: Tsh 20,000</div>
-    <button class="buy-btn">Buy Now</button>
-  </section>
 
-  <footer>
-    &copy; 2025 Gaming Keyboards. All rights reserved.
-  </footer>
+    <a class="buy-btn" href="https://wa.me/255748178216?text=Hi%2C%20I'm%20interested%20in%20your%20gaming%20keyboard!" target="_blank">
+      💬 Buy Now on WhatsApp
+    </a>
+
+    <div class="mpesa-box">
+      <h3>Pay via M-Pesa</h3>
+      <p><strong>Number:</strong> 0748 178 216</p>
+      <p><strong>Amount:</strong> Tsh 20,000</p>
+      <p>Send proof on WhatsApp after payment</p>
+    </div>
+
+    <footer>&copy; 2025 Gaming Gears</footer>
+  </div>
 
 </body>
 </html>
